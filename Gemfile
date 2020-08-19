@@ -51,9 +51,10 @@ group :development do
   gem 'listen', '~> 3.2', '>= 3.2.1'
   gem 'better_errors', '~> 2.4'
   gem 'guard', '~> 2.14', '>= 2.14.2'
+  gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.1', require: false 
   gem 'guard-bundler'
-  require 'em/pure_ruby'
+ 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
