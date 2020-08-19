@@ -44,10 +44,10 @@
 				</div><br>
 				  <div class="media-content">
 				  <% if tweeet.comments.count > 1 %>
-				  <strong><%= tweeet.comments.count %></strong><strong> Comments:</strong>
+				  <strong><%= tweeet.comments.count %></strong><strong> Replies:</strong>
 				  <% end %>
 				  <% if tweeet.comments.count == 1 %>
-				  <strong><%= tweeet.comments.count %></strong><strong> Comment:</strong>
+				  <strong><%= tweeet.comments.count %></strong><strong> Reply:</strong>
 				  <% end %>
 					<%= render tweeet.comments %>
 				  </div>

@@ -8,7 +8,12 @@
 </div>
 <section class="section comments">
 	<div class="container">
-		<h2 class="subtitle is-5"><strong><%= @tweeet.comments.count %></strong> Comments</h2>
+		<% if @tweeet.comments.count > 1 %>
+				  <h2 class="subtitle is-5"><strong><%= @tweeet.comments.count %></strong><strong> Replies:</strong></h2>
+				  <% end %>
+				  <% if @tweeet.comments.count == 1 %>
+				  <h2 class="subtitle is-5"><strong><%= @tweeet.comments.count %></strong><strong> Reply:</strong></h2>
+				  <% end %>
 		<%= render @tweeet.comments %>
 		<div class="comment-form">
 			<hr />
