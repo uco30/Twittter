@@ -1,4 +1,7 @@
 class TweeetsController < ApplicationController
+  require 'rails_rinku'
+
+
   before_action :set_tweeet, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   

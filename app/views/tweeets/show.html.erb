@@ -2,8 +2,8 @@
 
 <div class="container">
 <h3 class="subtitle is-3">
-<strong>Tweeet:</strong>
-  <%= @tweeet.tweeet %>
+<strong>Tweeet:</strong><br>
+  <%= Rinku.auto_link(@tweeet.tweeet).html_safe %>
 </h3>
 </div>
 <section class="section comments">

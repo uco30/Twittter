@@ -174,6 +174,7 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    rinku (2.0.6)
     rubyzip (2.3.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -247,6 +248,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.7)
   rails_autolink (~> 1.1, >= 1.1.6)
+  rinku
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form (~> 3.5)

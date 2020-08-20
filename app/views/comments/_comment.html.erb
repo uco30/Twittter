@@ -4,7 +4,7 @@
 	    <div class="content">
 	    <p>
 	      <strong><%= comment.name %>: </strong>
-	      <%= comment.body %>
+	      <%= Rinku.auto_link(comment.body).html_safe %>
         </p>
 	 </div>
 	</div>
