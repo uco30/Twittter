@@ -239,7 +239,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
   devise (~> 4.7, >= 4.7.1)
-  gravatar_image_tag (~> 1.2)
+  gravatar_image_tag
   guard (~> 2.14, >= 2.14.2)
   guard-bundler
   guard-livereload (~> 2.5, >= 2.5.1)
