@@ -7,4 +7,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :tweeets, dependent: :destroy
+  has_many :comments
 end

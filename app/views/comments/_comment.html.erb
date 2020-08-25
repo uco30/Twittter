@@ -3,13 +3,13 @@
 	  <div class="media-content">
 	    <div class="content">
 	    <p>
-	      <strong><%= comment.name %>: </strong>
+	      <strong><%= comment.user.name %>: </strong>
 	      <%= Rinku.auto_link(comment.body).html_safe %>
         </p>
 	 </div>
 	</div>
             <% if user_signed_in? %>
-			<% if current_user == @tweeet.user %>
+			<% if current_user == comment.user || current_user == @tweeet.user %>
             <%= link_to 'Delete', [comment.tweeet, comment], method: :delete, data: { confirm: "Are you sure?" } %>
 	        <% end %>
             <% end %>
