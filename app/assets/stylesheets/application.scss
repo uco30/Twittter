@@ -31,3 +31,26 @@
 .notification:not(:last-child) {
 	margin-bottom: 0;
 }
+
+@media (max-width: 767px) {
+	.level-left {
+		position: relative;
+	}
+	#icon1 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	
+	#icon2 {
+		position: absolute;
+		left: 40px;
+		bottom: 0;
+	}
+	
+	#icon3 {
+		position: absolute;
+		left: 80px;
+		bottom: 0;
+	}
+}
