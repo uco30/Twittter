@@ -1,7 +1,10 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
-      <div class="column is-4">
+      <div class="column is-4 is-full-mobile">
         
       <h2 class="title is-2">Edit <%= resource_name.to_s.humanize %></h2>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
